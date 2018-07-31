@@ -1,0 +1,11 @@
+/.classpath
+/.project
+/.settings
+.idea
+*.iml
+*.ipr
+target
+node
+node_modules
+yarn-error.log
+dx-react-starter.iml

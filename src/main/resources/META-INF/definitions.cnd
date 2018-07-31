@@ -1,0 +1,6 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<drsmix = 'http://www.jahia.org/jahiadxreactstarter/mix/1.0'>
+<drsnt = 'http://www.jahia.org/jahiadxreactstarter/nt/1.0'>
+
+[drsnt:testComponent] > jnt:content, jmix:droppableContent, jmix:siteComponent
