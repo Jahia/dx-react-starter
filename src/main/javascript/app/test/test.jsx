@@ -35,8 +35,7 @@ const SiteQuery = graphql(gqlQueries.SITE_QUERY, {
         return {
             variables  : {
                 path: "/sites"
-            },
-            fetchPolicy: 'network-only',
+            }
         }
     }
 });

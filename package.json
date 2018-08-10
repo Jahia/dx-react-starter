@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch"
+    "dev": "webpack --watch"
   },
   "author": "akarmanov <akarmanov@jahia.com>",
   "license": "LICENSE.TXT",
@@ -28,9 +28,10 @@
     "webpack-split-by-path": "2.0.0"
   },
   "dependencies": {
-    "@jahia/apollo-dx": "^1.0.0-beta.20180605080716",
-    "@jahia/i18next": "^1.0.0-beta.20180628145923",
-    "@jahia/react-apollo": "^1.0.0-beta.20180605080720",
+    "apollo-cache-inmemory": "^1.1.12",
+    "apollo-client": "2.3.*",
+    "apollo-link": "^1.2.2",
+    "apollo-link-http": "^1.5.4",
     "babel-plugin-lodash": "^3.3.4",
     "graphql": "0.12.3",
     "graphql-tag": "^2.9.1",

@@ -154,63 +154,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@jahia sync recursive ^\\.\\/.*\\.json$":
-/*!*************************************************!*\
-  !*** ./node_modules/@jahia sync ^\.\/.*\.json$ ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./apollo-dx/fragmentTypes.json": "./node_modules/@jahia/apollo-dx/fragmentTypes.json",
-	"./apollo-dx/node_modules/apollo-cache-inmemory/node_modules/graphql/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-cache-inmemory/node_modules/graphql/package.json",
-	"./apollo-dx/node_modules/apollo-cache-inmemory/node_modules/iterall/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-cache-inmemory/node_modules/iterall/package.json",
-	"./apollo-dx/node_modules/apollo-cache-inmemory/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-cache-inmemory/package.json",
-	"./apollo-dx/node_modules/apollo-cache-inmemory/tsconfig.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-cache-inmemory/tsconfig.json",
-	"./apollo-dx/node_modules/apollo-cache-inmemory/tslint.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-cache-inmemory/tslint.json",
-	"./apollo-dx/node_modules/apollo-client/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-client/package.json",
-	"./apollo-dx/node_modules/apollo-link-http/node_modules/apollo-link-http-common/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link-http/node_modules/apollo-link-http-common/package.json",
-	"./apollo-dx/node_modules/apollo-link-http/node_modules/apollo-link-http-common/tsconfig.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link-http/node_modules/apollo-link-http-common/tsconfig.json",
-	"./apollo-dx/node_modules/apollo-link-http/node_modules/graphql/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link-http/node_modules/graphql/package.json",
-	"./apollo-dx/node_modules/apollo-link-http/node_modules/iterall/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link-http/node_modules/iterall/package.json",
-	"./apollo-dx/node_modules/apollo-link-http/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link-http/package.json",
-	"./apollo-dx/node_modules/apollo-link-http/tsconfig.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link-http/tsconfig.json",
-	"./apollo-dx/node_modules/apollo-link/node_modules/graphql/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link/node_modules/graphql/package.json",
-	"./apollo-dx/node_modules/apollo-link/node_modules/iterall/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link/node_modules/iterall/package.json",
-	"./apollo-dx/node_modules/apollo-link/package.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link/package.json",
-	"./apollo-dx/node_modules/apollo-link/tsconfig.json": "./node_modules/@jahia/apollo-dx/node_modules/apollo-link/tsconfig.json",
-	"./apollo-dx/node_modules/graphql/package.json": "./node_modules/@jahia/apollo-dx/node_modules/graphql/package.json",
-	"./apollo-dx/node_modules/iterall/package.json": "./node_modules/@jahia/apollo-dx/node_modules/iterall/package.json",
-	"./apollo-dx/node_modules/lodash/package.json": "./node_modules/@jahia/apollo-dx/node_modules/lodash/package.json",
-	"./apollo-dx/package.json": "./node_modules/@jahia/apollo-dx/package.json",
-	"./i18next/package.json": "./node_modules/@jahia/i18next/package.json",
-	"./react-apollo/node_modules/lodash/package.json": "./node_modules/@jahia/react-apollo/node_modules/lodash/package.json",
-	"./react-apollo/package.json": "./node_modules/@jahia/react-apollo/package.json"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) { // check for number or string
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return id;
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "./node_modules/@jahia sync recursive ^\\.\\/.*\\.json$";
-
-/***/ }),
-
 /***/ "./src/main/javascript/app/DxContext.jsx":
 /*!***********************************************!*\
   !*** ./src/main/javascript/app/DxContext.jsx ***!
@@ -267,12 +210,13 @@ var gqlQueries = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _jahia_apollo_dx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @jahia/apollo-dx */ "./node_modules/@jahia/apollo-dx/index.es.js");
-/* harmony import */ var _jahia_i18next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @jahia/i18next */ "./node_modules/@jahia/i18next/index.es.js");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/index.js");
-/* harmony import */ var _DxContext_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../DxContext.jsx */ "./src/main/javascript/app/DxContext.jsx");
-/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./test */ "./src/main/javascript/app/test/test.jsx");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/index.js");
+/* harmony import */ var _DxContext_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../DxContext.jsx */ "./src/main/javascript/app/DxContext.jsx");
+/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./test */ "./src/main/javascript/app/test/test.jsx");
+/* harmony import */ var apollo_client__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! apollo-client */ "./node_modules/apollo-client/index.js");
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! apollo-link-http */ "./node_modules/apollo-link-http/lib/index.js");
+/* harmony import */ var apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! apollo-cache-inmemory */ "./node_modules/apollo-cache-inmemory/lib/index.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -289,6 +233,18 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
+var client = function client(props) {
+    var link = new apollo_link_http__WEBPACK_IMPORTED_MODULE_6__["HttpLink"]({
+        uri: props.dxContext.servletContext + '/modules/graphql'
+    });
+
+    return new apollo_client__WEBPACK_IMPORTED_MODULE_5__["ApolloClient"]({
+        link: link,
+        cache: new apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_7__["InMemoryCache"]()
+    });
+};
+
 var TestComp = function (_React$Component) {
     _inherits(TestComp, _React$Component);
 
@@ -304,21 +260,12 @@ var TestComp = function (_React$Component) {
             var dxContext = this.props.dxContext;
 
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                react_apollo__WEBPACK_IMPORTED_MODULE_4__["ApolloProvider"],
-                { client: Object(_jahia_apollo_dx__WEBPACK_IMPORTED_MODULE_1__["client"])({ contextPath: dxContext.contextPath }) },
+                react_apollo__WEBPACK_IMPORTED_MODULE_2__["ApolloProvider"],
+                { client: client(this.props) },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    react_i18next__WEBPACK_IMPORTED_MODULE_3__["I18nextProvider"],
-                    { i18n: Object(_jahia_i18next__WEBPACK_IMPORTED_MODULE_2__["getI18n"])({
-                            lng: dxContext.uilang,
-                            contextPath: dxContext.contextPath,
-                            ns: ['dx-react-starter'],
-                            defaultNS: 'dx-react-starter'
-                        }) },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        _DxContext_jsx__WEBPACK_IMPORTED_MODULE_5__["DxContext"].Provider,
-                        { value: dxContext },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_test__WEBPACK_IMPORTED_MODULE_6__["default"], { dxContext: dxContext })
-                    )
+                    _DxContext_jsx__WEBPACK_IMPORTED_MODULE_3__["DxContext"].Provider,
+                    { value: dxContext },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_test__WEBPACK_IMPORTED_MODULE_4__["default"], { dxContext: dxContext })
                 )
             );
         }
@@ -431,8 +378,7 @@ var SiteQuery = Object(react_apollo_index__WEBPACK_IMPORTED_MODULE_2__["graphql"
         return {
             variables: {
                 path: "/sites"
-            },
-            fetchPolicy: 'network-only'
+            }
         };
     }
 });

@@ -15,7 +15,8 @@
 
 <script>
     var contextJsParameters = {
-        prop1: "my prop"
+        prop1: "my prop",
+        servletContext: "${url.context}"
     };
 
     <c:choose>
