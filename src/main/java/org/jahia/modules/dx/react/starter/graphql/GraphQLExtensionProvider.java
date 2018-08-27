@@ -16,6 +16,8 @@ public class GraphQLExtensionProvider implements DXGraphQLExtensionsProvider {
         List<Class<?>> extensions = new ArrayList<>();
         //Add extensions as follows:
         //extensions.add(GraphQLExtension.class);
+        extensions.add(org.jahia.modules.dx.react.starter.graphql.mutations.helloworld.QueryExtension.class);
+        extensions.add(org.jahia.modules.dx.react.starter.graphql.queries.helloworld.QueryExtension.class);
         return extensions;
     }
 }
