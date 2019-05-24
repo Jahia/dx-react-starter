@@ -22,7 +22,7 @@
     "gulp": "^3.9.1",
     "through2": "^2.0.3",
     "webpack": "^4.7.0",
-    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^2.1.2",
     "webpack-node-externals": "^1.7.2",
     "webpack-split-by-path": "2.0.0"
